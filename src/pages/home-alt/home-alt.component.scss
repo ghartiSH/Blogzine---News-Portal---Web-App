@@ -1,0 +1,359 @@
+.home-grid{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+}
+.home-div-left{
+   width: 50%;
+   height: 560px;
+   border-radius: 10px;
+   padding: 10px;
+}
+.home-div-right{
+    width: 50%;
+    height: 560px;
+    border-radius: 10px;
+    padding: 10px;
+ }
+
+.second-div-up{
+    height: 50%;
+    border-radius: 10px;
+}
+.second-div-down{
+    height: 50%;
+    border-radius: 10px;
+}
+.outer-small-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.small-div{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+.body-content{
+    max-width: 60%;
+    margin: auto;
+
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.highlights{
+    width:75% ;
+    margin-top: 30px;
+}
+.side-section{
+    width: 25%;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+
+h2{
+    font-size: 1.875rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    color:#191a1f;
+}
+
+mat-grid-tile {
+    border-radius: 10px;
+  }
+  
+
+.social{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+  }
+  .social-box{
+      color: white;
+      width: 33%;
+      margin-left: 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .social-box:hover{
+      opacity: 0.8;
+  }
+  .social-box p{
+      font-size: 00.9375rem;
+      font-weight: 500;
+  }
+
+.categories{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: underline;
+    font-weight: 700 !important;
+    text-align: center;
+    color: #595D69;
+    font-family: Rubik, sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-top:1rem;
+}
+
+.category-tile{
+    border-radius: 5px;
+}
+
+.category-tile-div:hover{
+    img{
+        overflow: hidden;
+        transform: scale(1.1);
+    }
+    p:after{
+        width: 100%;
+    }
+}
+    
+.category-tile-image{
+    transition: transform 0.4s;
+    background-size: cover;
+}
+
+.category-tile-text{
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 600;
+    position: absolute;
+    left: 38%;
+    bottom: 5%;
+}
+.category-tile-text:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s ease-in-out;
+}
+
+
+.link:hover{
+    color: #0d6efd;;
+}
+.recent-post{
+    width: 100%;
+}
+
+.recent-post-content{
+    display:block;
+    width: 90%;
+    height: 95%;
+}
+.recent-post-image{
+    border-radius: 20px;
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+.recent-post-body{
+    margin-left: 5px;
+    width: 60%;
+    float: right;
+}
+
+.load-button{
+    margin-top: 50px;
+    margin-left: 30%;
+    background-color: rgba(33, 99, 232, 0.1);
+    color: #2163e8;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.load-button:hover{
+    background-color: #2163e8;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    
+}
+
+.gridlist-home{
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.fancy-header{
+    background-image: linear-gradient(white, white);
+    background-size: 0 3px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 800ms ease;
+    box-sizing: border-box;
+}
+
+.gridlist-home:hover {
+    p.heading:after{
+       width: 100%;
+    }
+
+    .gridlist-home-image{
+        transform: scale(1.1);
+    }
+    .fancy-header{
+        background-size: 100% 3px;
+    }
+}
+.gridlist-home-image{
+    transition: transform .4s;
+    background-size: cover; 
+    height: 100%; 
+    width: 100%;
+}
+
+.news-details{
+    display: flex;
+}
+.news-details p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.news-category{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.900rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+    padding: 0 5px;
+    position: absolute;
+    border-radius: 3px;
+    margin-top: -70px;
+}
+.text{
+    font-size: 0.9375rem;
+    color: #595d69;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.category{
+    width: 100px;
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+    padding: 3px 11px 3px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: green;
+}
+.underline{
+    background-image: linear-gradient(black, black);
+    background-size: 0 3px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 800ms ease;
+    box-sizing: border-box;
+}
+
+.underline:hover{
+    background-size: 100% 3px;
+}
+ngb-carousel{
+    max-width: 100%;
+
+}
+
+@media screen and (max-width: 1900px) {
+    .body-content{
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .body-content{
+        max-width: 85%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .body-content{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .body-content{
+        max-width: 95%;
+    }
+
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-grid{
+        display: block;
+    }
+    .small-div{
+        width: 100%;
+    }
+    .home-div-left{
+        width: 100%;
+    }
+    .home-div-right{
+        width: 100%;
+    }
+    .highlights{
+        width: 100%;
+    }
+    .side-section{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:780px) {
+
+    .second-div-up{
+        height: 33%;
+    }
+    .second-div-down{
+        height: 67%;
+    }
+    .outer-small-div{
+        display: block;
+    }
+    .small-div{
+        height: 50%;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .home-div-left{
+        height: 400px;
+    }
+    .home-div-right{
+        width: 100%;
+        height: 800px;
+
+    }
+}
+
+
+
+
+

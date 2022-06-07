@@ -1,0 +1,224 @@
+.footer{
+    width: 100%;
+    background-color: rgb(25, 26, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    margin-top: 80px;
+    width: 60%;
+    display: flex;
+}
+
+.top-text{
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+.buttons{
+    max-width: 40%;
+    margin-left:95px;
+}
+.text{
+    font-size: 0.9375rem;
+    color: #d0d4d9;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+input{
+    height: 35px;
+    border: soild 1px  #2163e8;
+}
+.body{
+    display: flex;
+    width: 60%;
+    margin-top: 50px;
+}
+.body-content{
+    width: 25%;
+    height: 100%;
+}
+
+.double-list{
+    display: flex;
+}
+
+.list{
+    list-style: none;
+}
+li{
+    margin-top: 10px;
+}
+.body-footer{
+    width: 60%;
+    margin-top: 40px;
+}
+.hr-line{
+    margin-top: 50px;
+    opacity:0.25;
+    border:solid 1px white;
+    width:60%;
+}
+
+.footer-end{
+    height: 100px;
+    background-color: rgb(12, 13, 17);
+    opacity: 1;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-end-text{
+    width:60%;
+    display: block;
+    margin: auto;
+}
+.end-text{
+    margin-top: 10px;
+    float: left;
+}
+.end-list{
+    float: right;
+}
+
+@media screen and (max-width: 1900px) {
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .top{
+        width: 85%;
+    }
+    .top-text{
+        max-width: 40%;
+        margin-left: 20px;
+    }
+    .buttons{
+        margin-left: 20px;
+        max-width: 100%;
+        display: block;
+    }
+    input{
+        width: 90%;
+    }
+    .body{
+        width: 85%;
+    }
+    .body-footer{
+        width: 85%;
+    }
+
+    .footer-end-text{
+        width: 85%;
+    }
+    .hr-line{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .top{
+        width: 85%;
+    }
+    .top-text{
+        max-width: 40%;
+        margin-left: 20px;
+    }
+    .buttons{
+        margin-left: 20px;
+        max-width: 100%;
+        display: block;
+    }
+    input{
+        width: 90%;
+    }
+    .body{
+        width: 85%;
+        
+    }
+    .body-footer{
+        width: 85%;
+    }
+    .footer-end-text{
+        width: 90%;
+    }
+   
+}
+@media screen and (max-width: 980px) {
+    .top{
+        width: 90%;
+    }
+    .top-text{
+        max-width: 40%;
+        margin-left: 20px;
+    }
+    .buttons{
+        margin-left: 20px;
+        max-width: 100%;
+        display: block;
+    }
+    input{
+        width: 90%;
+    }
+    .body{
+        width: 90%;
+        display: block;
+    }
+    .body-footer{
+        width: 90%;
+    }
+    .body-content{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .top{
+        width: 95%;
+        display: block;
+    }
+    .top-text{
+        max-width: 90%;
+        margin-left: 0px;
+    }
+    .buttons{
+        margin-left: 0px;
+        max-width: 100%;
+        display: block;
+    }
+    input{
+        width: 90%;
+    }
+    .body{
+        width: 95%;
+        display: block;
+    }
+    .body-content{
+        width: 100%;
+    }
+    .body-footer{
+        width: 95%;
+    }
+    .footer-end-text{
+        width: 95%;
+        
+    }
+    .end-list{
+        float: none;
+        margin: auto;
+        width: 60%;
+    }
+    .end-text{
+        float: none;
+        margin: auto;
+        width: 60%;
+    }
+    .footer-end{
+        height: 150px;
+    }
+
+}

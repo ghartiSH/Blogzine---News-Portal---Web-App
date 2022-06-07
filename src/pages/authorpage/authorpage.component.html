@@ -1,0 +1,51 @@
+<div class="body">
+    <div class="author">
+        <Section style="width: 15%;"> 
+            <img src="assets/images/team1.jpg" height="150px" width="150px" style="border-radius: 100px; z-index: -1;">
+            <p class="text" style="background-color: red; width: 80px; color: white; padding: 0px 10px 0px 10px; border-radius: 5px; margin-left: 40px;margin-top: -20px;position: relative;"> 14 Posts</p>
+        </Section>
+        <section  class="author-text">
+            <section>
+                <section > 
+                    <h2 class="text" style="font-size: 22px; font-weight: 600;color: #191a1f;">Louis Ferguson</h2>
+                    <p class="text" style="line-height: 0px; font-size: 12px;">An Editor at Blogzine</p>
+                </section>
+            </section>
+            <section style="margin-top: 20px;">
+                <p class="text">
+                    Louis Ferguson is a senior editor for the blogzine and also reports on breaking news based in London. He has written about government, criminal justice, and the role of money in politics since 2015.
+                </p>
+            </section>
+            <section>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+            </section>
+        </section>
+    </div>
+    <div>
+        <h2 class="text" style="font-size: 32px; font-weight: 600; color: #191a1f; margin-top: 50px;">The Latest from Louis Ferguson</h2>
+        <section>
+            <mat-grid-list [cols]="cols" rowHeight="510px" [gutterSize]="'30px'">
+                <mat-grid-tile *ngFor="let til of news | slice:0:6">
+                <mat-card style="height: 100%; width: 100%;">
+                    <img mat-card-image src="{{til.image}}" height="275px" width="370px"style="background-size: cover; border-radius: 10px;">
+                    <p class="text category" [style.background-color]="til.color"> • Category </p>
+                    <mat-card-content>
+                        <h2 class="text underline" style="font-size: 22px; font-weight: 600; color: #191a1f;">{{til.text}}</h2>
+                        <p class="text">
+                            {{til.num}} asdjfhlkajsd flkajsdf akljsdhf asdlkfjha sdfkjlasdhf askldfhj asdkhjfakjds flkajdhsf asdfkja sdfkjhasd fkajdhsfklasdf  
+                        </p>
+                            <div class="news-details">
+                            <img src="{{til.image}}" height="40px" width="40px" style="border-radius: 40px; ">
+                            <p class="text"> by Author • Jan 22 2021 </p>
+                            
+                            </div>
+                    </mat-card-content>
+                </mat-card>
+                </mat-grid-tile>
+                </mat-grid-list>
+        </section>
+    </div>
+    <button mat-button class="load-button"> Load More Posts <mat-icon>arrow_downward</mat-icon></button>
+</div>

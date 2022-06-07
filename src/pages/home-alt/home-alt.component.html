@@ -1,0 +1,238 @@
+<div class="body-content">
+    <div class="home-grid">
+        <div class="home-div-left">
+            <div class="gridlist-home">
+                <img src="assets/images/img1.jpg" class="gridlist-home-image">
+            
+            <section style="margin-top: -220px; position: relative; padding: 20px;">
+                <p class="text category"> 
+                    • Category
+                </p>
+                <p class="text fancy-header" style="font-size: 42px; color: white; font-weight: 600;">
+                   I am heading
+                </p>
+                <p class="text" style="color: white;">
+                    I am description
+                </p>
+                <p class="text" style="color: white;">
+                    by Author • 22 Nov 
+                </p>
+            </section>
+        </div>
+        </div>
+
+        <div class="home-div-right">
+            <div class="second-div-up" style="padding-bottom: 10px;">
+                <div class="gridlist-home">
+                    <img src="assets/images/img2.jpg" class="gridlist-home-image">
+                
+                <section style="margin-top: -150px; position: relative; padding: 20px;">
+                    <p class="text category"> 
+                        • Category
+                    </p>
+                    <p class="text fancy-header" style="font-size: 1.40625rem; color: white; font-weight: 600;">
+                       I am heading
+                    </p>
+                    <p class="text" style="color: white;">
+                        by Author • 22 Nov 
+                    </p>
+                </section>
+            </div>
+            </div>
+        
+
+            <div class="second-div-down">
+                <div class="outer-small-div">
+                    <div class="small-div">
+                        <div class="gridlist-home">
+                        <img src="assets/images/img3.jpg" class="gridlist-home-image">
+                        <section style="margin-top: -150px; position: relative; padding: 20px;">
+                            <p class="text category"> 
+                                • Category
+                            </p>
+                            <p class="text fancy-header" style="font-size: 1.40625rem; color: white; font-weight: 600;">
+                               I am heading
+                            </p>
+                            <p class="text" style="color: white;">
+                                by Author • 22 Nov 
+                            </p>
+                        </section>
+                        </div>
+                    </div>
+                    <div class="small-div">
+                        <div class="gridlist-home">
+                        <img src="assets/images/img4.jpg" class="gridlist-home-image">
+                        <section style="margin-top: -150px; position: relative; padding: 20px;">
+                            <p class="text category"> 
+                                • Category
+                            </p>
+                            <p class="text fancy-header" style="font-size: 1.40625rem; color: white; font-weight: 600;">
+                               I am heading
+                            </p>
+                            <p class="text" style="color: white;">
+                                by Author • 22 Nov 
+                            </p>
+                        </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="body">
+        <div class="highlights">
+            <h2 class="text" style="font-size: 1.875rem; color: #191a1f; font-weight: 700; margin-top: 20px;">
+                <mat-icon>hourglass_full</mat-icon> Today's Top Highlights
+            </h2>
+            <p class="text">
+                Latest breaking news, pictures, videos, and special reports
+            </p>
+            <mat-grid-list [cols]="cols" rowHeight="500px" [gutterSize]="'30px'">
+                <mat-grid-tile *ngFor="let til of news | slice:0:(high)">
+                <mat-card style="height: 100%; width: 100%;">
+                    <img mat-card-image src="{{til.image}}" style="background-size: cover; border-radius: 10px;">
+                    <p class="news-category" [style.background-color]="til.color"> • Category </p>
+                    <mat-card-content>
+                        <p class="text underline" style="font-size:1.40625rem; font-weight: 700; color:#191a1f;">
+                            {{width}}
+                        </p>
+                        <p class="text">
+                            {{til.num}} asdjfhlkajsd flkajsdf akljsdhf asdlkfjha sdfkjlasdhf askldfhj asdkhjfakjds flkajdhsf asdfkja sdfkjhasd fkajdhsfklasdf  
+                        </p>
+                        <section class="news-details">
+                            <img src="{{til.image}}" height="40px" width="40px" style="border-radius: 40px;">
+                            <p class="text"> by Author </p>
+                             <p class="text"> • Jan 22 2021 </p>
+                        </section>
+                    </mat-card-content>
+                </mat-card>
+                </mat-grid-tile>
+                </mat-grid-list>
+                <button mat-button class="load-button" (click)="onLoad()"> Load More Posts <mat-icon>arrow_downward</mat-icon></button>
+        </div>
+        <div class="side-section">
+            <div class="social">
+                <div class="social-box" style="background-image:linear-gradient(#4f9ef8,#4f9ef8);">
+                    <mat-icon style="margin-top: 5px;">facebook</mat-icon>
+                    <p style="margin-top: 10px;">1.5K</p>
+                    <p>Fans</p>
+                </div>
+                <div class="social-box" style="background-image: linear-gradient(to right, #dc3545,#d63384);">
+                    <mat-icon style="margin-top: 5px;">photo_camera</mat-icon>
+                    <p style="margin-top: 10px;">1.8M</p>
+                    <p>Followers</p>
+                </div>
+                <div class="social-box" style="background-image: linear-gradient(#fc0f03,#fc0f03);">
+                    <mat-icon style="margin-top: 5px;">smart_display</mat-icon>
+                    <p style="margin-top: 10px;">22K</p>
+                    <p>Subs</p>
+                </div>
+            </div>
+
+        <div class="categories">
+            <h1 style="font-weight: 500; text-align: left;">
+                Trending Topics
+            </h1>
+            <section>
+                <mat-grid-list cols="1" rowHeight="60px" [gutterSize]="'15px'">
+                    <mat-grid-tile *ngFor="let cat of categories | slice:0:(category)" class="category-tile">
+                        <div class="category-tile-div">
+                            <img src="{{cat.image}}" class="category-tile-image">
+                            <p class="category-tile-text">
+                                {{cat.name}}
+                            </p>
+                        </div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </section>
+            <a  (click)="onLinkClick()">
+                <p class="link"> 
+                    View All Categories
+                </p>
+            </a>
+
+        </div>
+        <div class="recent-post">
+            <h1 class="text" style="font-weight: 500; text-align: left; font-size: 1.40625rem; color: #191a1f;;">
+                Recent Posts
+            </h1>
+            <section>
+                <mat-grid-list cols="1" rowHeight="80px" [gutterSize]="'15px'">
+                    <mat-grid-tile *ngFor="let cat of categories | slice:0:4" class="category-tile">
+                        <div class="recent-post-content">
+                            <div class="recent-post-image">
+                                <img src="{{cat.image}}" width="100%" height="100%">
+                            </div>
+                            <div class="recent-post-body">
+                              <h6 class="text underline" style="color: #191a1f; font-size: 0.9375rem; font-weight: 700;">
+                                  The pros and cons of business agency
+                              </h6>
+                              <p class="text" style="font-size: 12px;">
+                                  Nov 29 2021
+                              </p>
+                            </div>
+                        </div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </section>
+        </div>
+
+        </div>
+    </div>
+
+    <hr style="margin-top: 50px; border-width: 2px; opacity: 0.1; border-color: #2163e8;">
+        <div class="sponsored">
+            <h2>
+                <mat-icon>star</mat-icon> Sponsored News
+            </h2>
+                <div class="slider">
+                        <ngb-carousel>
+                            <ng-template ngbSlide >
+                                <mat-grid-list cols="4" rowHeight="400px" [gutterSize]="'15px'">
+                                <mat-grid-tile *ngFor="let til of news |slice:0:4" >
+                                <mat-card>
+                                    <img mat-card-image src="{{til.image}}" style="background-size: cover; border-radius: 20px;">
+                                    <p class="news-category" [style.background-color]="til.color"> • Category </p>
+                                    <mat-card-content>
+                                        <p class="text underline" style="font-size:1.2rem; color: #191a1f;;">
+                                            {{til.text}}
+                                        </p>
+                                        <section class="news-details">
+                                            <img src="{{til.image}}" height="40px" width="40px" style="border-radius: 40px;">
+                                            <p class="text"> by Author </p>
+                                             <p class="text"> • Jan 22 2021 </p>
+                                        </section>
+                                    </mat-card-content>
+                                </mat-card>
+                                </mat-grid-tile>
+                                </mat-grid-list>
+                            </ng-template>
+                            <ng-template ngbSlide >
+                                <mat-grid-list cols="4" rowHeight="400px" [gutterSize]="'15px'">
+                                <mat-grid-tile *ngFor="let til of news |slice:4:8" >
+                                <mat-card>
+                                    <img mat-card-image src="{{til.image}}" style="background-size: cover; border-radius: 20px;">
+                                    <p class="news-category" [style.background-color]="til.color"> • Category </p>
+                                    <mat-card-content>
+                                        <p class="text underline" style="font-size:1.2rem; color: #191a1f;;">
+                                            {{til.text}}
+                                        </p>
+                                        <section class="news-details">
+                                            <img src="{{til.image}}" height="40px" width="40px" style="border-radius: 40px;">
+                                            <p class="text"> by Author </p>
+                                             <p class="text"> • Jan 22 2021 </p>
+                                        </section>
+                                    </mat-card-content>
+                                </mat-card>
+                                </mat-grid-tile>
+                                </mat-grid-list>
+                            </ng-template>
+                            
+                        </ngb-carousel>
+            </div>
+    
+        </div>
+    
+</div>

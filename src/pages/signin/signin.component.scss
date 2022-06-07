@@ -1,0 +1,72 @@
+*{
+    margin: auto;
+}
+.body{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    height: 580px;
+    width: 50%;
+    background-color: #2163E81A;
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.text{
+    font-size: 0.9375rem;
+    color: #595d69;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dfe0e5;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #29292e;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+@media screen and (max-width: 1800px) {
+    .body{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .body{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .body{
+        width: 90%
+    }
+    
+    .form{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .body{
+        width: 95%
+    }
+    .form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .body{
+        width: 95%
+    }
+    .form{
+        width: 95%;
+    }
+}

@@ -1,0 +1,143 @@
+*{
+    margin: auto;
+}
+.body{
+    width: 60%;
+    display: block;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.content{
+    margin-top: 50px;
+    width: 75%;
+    float: left;
+    margin-bottom: 100px;
+}
+.categories{
+    margin-top: 50px;
+    width: 25%;
+    float: right;
+    padding-left: 20px;
+}
+.text{
+    font-size: 0.9375rem;
+    color: #595d69;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.title{
+    font-size: 48px;
+    color:white;
+    font-weight:600;
+    margin:10px;
+}
+
+i{
+    margin-right: 12px;
+}
+.reply{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dfe0e5;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #29292e;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+.category-tile{
+    border-radius: 5px;
+}
+
+.author{
+    margin-top: 50px;
+    width:100%;
+    background-color:#2163E81A;
+    height:240px;
+    display:block;
+    border-radius:5px;
+
+}
+
+.author-text{
+    width: 80%;
+    float:right;
+    margin-top:30px;
+    margin-right:20px;
+}
+
+.actual-comments{
+    margin-bottom: 30px;
+}
+
+.comment-text{
+    width: 90%;
+    float:right;
+    margin-right:10px;
+}
+
+@media screen and (max-width: 1800px) {
+    .body{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .body{
+        width: 90%
+    }
+    
+    .author-text{
+        width: 75%;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .body{
+        width: 95%
+    }
+    .title{
+        font-size: 24px;
+    }
+    .categories{
+        float: none;
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .content{
+        width: 95%;
+    }
+    .author-text{
+        width: 75%;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+    .comment-text{
+        width: 80%;
+        margin-right: 0px;
+    }
+    .actual-comments{
+        margin-bottom: 50px;
+
+    }
+    .reply{
+        margin-bottom: 50px;
+    }
+}

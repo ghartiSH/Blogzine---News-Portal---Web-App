@@ -1,0 +1,26 @@
+<div class="dialog-box">
+    <h2 mat-dialog-title>
+        Add Category
+    </h2>
+    <div mat-dialog-content>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label> Enter a valid Category </mat-label>
+              <input type="text" matInput [formControl]="categoryFormControl" placeholder="Like:Sports/Business" [(ngModel)]="category.categoryName" id="categoryName" name="categoryName">
+              <mat-error *ngIf="categoryFormControl.hasError('required')">
+                Category is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </form>
+    </div>
+    <div mat-dialog-actions  class="dialog-button">
+        <button mat-raised-button (click)="onSubmit()" [disabled]="categoryFormControl.invalid" style="height:50px; width: 100px;">
+            Add
+        </button>
+        <button mat-raised-button mat-dialog-close style="height:50px; width: 100px; background-color: red; color: white;">
+            Close
+        </button>
+    </div>
+
+</div>
+

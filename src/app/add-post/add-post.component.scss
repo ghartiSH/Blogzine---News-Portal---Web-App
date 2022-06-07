@@ -1,0 +1,21 @@
+
+.dialog-body{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dialog-box{
+    height: 700px;
+    width: 600px;
+}
+.dialog-button{
+    float: right;
+}
+
+.long-field{
+    width: 100%;
+    margin-top: 0px;
+}
+textarea{
+    height: 80px;
+}

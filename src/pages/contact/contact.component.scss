@@ -1,0 +1,114 @@
+*{
+    margin: auto;
+}
+.body{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    font-size: 0.9375rem;
+    color: #595d69;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.map{
+    margin-top: 50px;
+    height: 400px;
+    width: 80%;
+    background-color: green;
+}
+.contact{
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+}
+.contact-info{
+    width: 50%;
+    height: 100%;
+}
+.form{
+    width: 80%;
+    margin-bottom: 100px;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dfe0e5;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #29292e;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    margin-top: 20px;
+}
+@media screen and (max-width: 1800px) {
+    .body{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .body{
+        width: 85%
+    }
+    .map{
+        width: 100%;
+    }
+    .contact{  
+        width: 100%;
+    }
+    .form{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .body{
+        width: 90%
+    }
+    .map{
+        width: 100%;
+    }
+    .contact{  
+        width: 100%;
+    }
+    .form{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .body{
+        width: 95%
+    }
+    .map{
+        width: 100%;
+    }
+    .contact{  
+        width: 100%;
+    }
+    .form{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .body{
+        width: 95%
+    }
+    .map{
+        width: 100%;
+    }
+    .contact{
+        display: block;
+        width: 100%;
+    }
+    .contact-info{
+        width: 90%;
+    }
+    .form{
+        width: 95%;
+    }
+}

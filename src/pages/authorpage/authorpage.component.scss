@@ -1,0 +1,127 @@
+*{
+    margin: auto;
+}
+.body{
+    width: 60%;
+    display: block;
+}
+
+
+.text{
+    font-size: 0.9375rem;
+    color: #595d69;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+i{
+    margin-right: 15px;
+}
+.category{
+    width: 100px;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: -50px;
+    position: absolute;
+    color: white;
+    padding: 3px 11px 3px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.author{
+    margin-top: 50px;
+    width:100%;
+    background-color:#2163E81A; 
+    display:flex;
+    border-radius:5px;
+    padding: 20px;
+}
+.author-text{
+    width: 80%;
+}
+
+.category-tile{
+    border-radius: 5px;
+}
+.news-details{
+    display: flex;
+    img{
+        margin-left: 0px;
+    }
+    p{
+        position: absolute;
+        margin: 5px 0px 0px 50px;
+    }
+}
+.load-button{
+    margin-top: 50px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    background-color: rgba(33, 99, 232, 0.1);
+    color: #2163e8;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.load-button:hover{
+    background-color: #2163e8;
+    color: white;
+    font-weight: 500;
+    
+}
+.underline{
+    background-image: linear-gradient(black, black);
+    background-size: 0 3px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 800ms ease;
+    box-sizing: border-box;
+}
+
+.underline:hover{
+    background-size: 100% 3px;
+}
+@media screen and (max-width: 1800px) {
+    .body{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .body{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .body{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .body{
+        width: 90%;
+    }
+    .author-text{
+        width: 60%;
+
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .body{
+        width: 95%;
+    }
+    .author{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .author-text{
+        width: 80%;
+
+    }
+
+    
+}

@@ -1,0 +1,30 @@
+<mat-toolbar>
+    <span>Dashboard</span>
+    
+  </mat-toolbar>
+
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <button mat-raised-button class="side-button" id="button1" (click)="button1Clicked()"> Add Category </button><br>
+        <button mat-raised-button class="side-button" id="button2" (click)="button2Clicked()"> Add Post </button> <br>
+        <a mat-raised-button routerLink="/test"class="side-button"> Button 3 </a><br>
+        <button mat-raised-button class="side-button"> Button 4 </button><br>
+        <button mat-raised-button class="side-button"> Button 5 </button><br>
+    </mat-drawer>  
+    <div *ngIf="button3">
+      <p >
+        This is text of button 3
+      </p>
+    </div>
+    <div *ngIf="button4">
+      <p >
+        This is text of button 4
+      </p>
+    </div>
+    <div *ngIf="button5">
+      <p >
+        This is text of button 5
+      </p>
+    </div>
+  </mat-drawer-container>
+
